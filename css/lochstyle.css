@@ -1,0 +1,316 @@
+/*  Universal Selector - Reset all html elements to the following */
+* { 
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    border: 0;
+}
+
+/* set the html tag to max-width of the screen */
+html {
+    max-width: 100%;
+    font-family:Arial, Helvetica, sans-serif }
+
+/* Header Section */
+
+/* Style the header section */
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding:10px 10px;
+}
+h1{
+
+    display: flex;
+    text-align:left;
+}
+
+h2{
+    color:red;
+}
+
+
+/* Set image width to 200px */
+.logo {
+    width: 30%;
+}
+
+/* Set the width of thegnavigation 100% of the remaining space */
+.header-nav {
+    width: 100%;
+}
+
+/* Set the unorder list to display flex and change flow to horizontal */
+/* move the content to the end and set the gap between children to 20px */
+.header-ul {
+    display: flex;
+    margin-top: 10px;
+    justify-content:space-evenly;
+    gap:20px;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+    color:black
+    font-size 18px;}
+
+/* Pseuod-Class hover */
+a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* remove bullet point */
+li {
+    list-style-type: none;
+}
+/* End of Header Section */
+
+
+/* main section  */
+.hero {
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.hero h1, .hero button {
+    position: absolute;
+}
+
+.hero h1 {
+    color:violet;
+    text-shadow: 5px 5px 5px #2d694b;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.hero button {
+    font-size: 20px;
+    margin-top: 80px;
+    padding: 8px 14px;
+    background-color: yellow;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px blueviolet;
+}
+
+.hero button:hover {
+    background-color:aqua;
+}
+
+.story {
+    display: flex;
+    justify-content: center;
+    background-color:lightgreen;
+    text-align: center;
+    color: white;
+    padding: 60px;
+}
+
+.story-content h1{
+    color:green;
+    display: block;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.story-content p {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+    color: black;
+    font-size: larger;
+}
+
+/* views */
+.views {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;    
+}
+
+q {
+    width: 70%;
+    position: relative;
+    display: block;
+    background-color: antiquewhite;
+    padding: 20px;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+q::before {
+    content: '';
+}
+
+q::after {
+    content: "\2666";
+    position: absolute;
+    font-size: 40px;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: antiquewhite;
+}
+
+.views p {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+
+
+.views {
+    padding: 20px 0;
+    text-align: center;
+    background-color:yellow
+}
+
+q{
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+}
+
+.activities p{
+    font-size: larger;
+    text-align: justify;
+    color: black;
+}
+.activities h1 {
+    padding: 20px;
+    text-align: left;
+    font-size:xx-large;
+    color: blueviolet;
+}
+
+.about h1 {
+    padding: 20px;
+    text-align: left;
+    font-size:xx-large;
+    color: blueviolet;
+}
+.staff h1 {
+    padding: 20px;
+    text-align: left;
+    font-size:xx-large;
+    color: goldenrod;
+}
+
+.courses h1 {
+    padding: 20px;
+    text-align: left;
+    font-size:xx-large;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 75%;
+}
+
+.card:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.card-image,.card-content {
+    padding-bottom: 50px;
+}
+.card-content p{
+    color: black;
+    text-align: justify;    
+    text-justify: inter-word;
+}
+
+.card-content ul{
+    color: black;
+    text-align: justify;    
+    text-justify: inter-word;
+    font-size: larger;
+}
+
+.card-image img {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.card:nth-child(even) img{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card-content {
+    width: 100%;
+}
+
+.card-content h2 {
+    padding-bottom: 10px;
+}
+
+.staff h1, .staff p {
+    display: inline-block;
+}
+
+.staff p{
+    padding-bottom: 20px;
+    font-size: larger;
+
+}
+/* End of main */
+
+/* Start of Footer Section */
+
+footer {
+    background-color:yellowgreen;
+    padding: 40px 0;
+    color: black;
+    line-height: 32px;
+    font-size: 18px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+i {
+    font-size:30px;
+    padding: 20px 10px;
+}
+
+i:first-of-type {
+    padding-left: 0;
+}
+
+
+
